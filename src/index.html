@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape character in copy to HTML entities</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/slate/bootstrap.min.css">
+
+  <style>
+    #meme{
+      margin-top: 100em;
+      margin: 100em auto 10em auto;
+     text-align: center;
+    }
+    #meme  img{
+            max-width: 100%;
+        }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164343469-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164343469-1');
+</script>
+
+</head>
+<body class="container">
+
+
+  <h1>Escape tool</h1>
+  <p>Escape character in between html tags to HTML entities. <br>It will also escape copy inside <em>alt=""</em> attributes inside image tags.</p>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <label>Source code:</label>
+      <textarea class="form-control" id="code-src" cols="30" rows="30"></textarea>
+    </div>
+    <div class="col-sm-6">
+      <label>Escaped code:</label>
+      <textarea class="form-control" id="code-res" cols="30" rows="30"></textarea>
+    </div>
+    <div class="col-sm-6">
+      <br>
+      <button id="btn-convert" type="button" class="btn btn-primary">Convert</button>
+      <button id="btn-reset" type="button" class="btn btn-default">Reset</button>
+    </div>
+    <div class="col-sm-6 text-right">
+      <br>
+      <small>"Created in a rush". &copy; Wunderman Thompson Buenos Aires - 2020 </small>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id="chars">
+    <h3>Supported characters</h3>
+    <p>This is a list of all supported characters and the escape code used in the replace.</p>
+    <table id="chars-list" class="table">
+      <thead>
+        <tr>
+          <th>Character</th>
+          <th>Escaped Code</th>
+          <th>Character Name</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+
+  <div id="meme">
+    <img src="https://i.imgflip.com/3xum7v.jpg" title="made at imgflip.com"/>
+  </div>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.slim.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
