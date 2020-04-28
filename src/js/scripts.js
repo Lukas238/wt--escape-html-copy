@@ -369,7 +369,7 @@ function popuplate_chars_table(){
 
   var output = '';
   $.each(chars, function (key, item) {
-      output += "<tr><td><code>"+item.char+"</code></td><td><code>"+ $('<div/>').text(item.htmlentity).html()+"</code></td><td>"+item.char_name+"</td></tr>";
+      output += "<tr><td><code>"+item.char+"</code></td><td><code>"+ $('<div/>').html(item.htmlentity).text()+"</code></td><td>"+item.char_name+"</td></tr>";
   });
 
   $('#chars-list tbody').html(output);
