@@ -335,17 +335,18 @@ RegExp.sanitize_regex = function (s) {
 //Replace function
 // Replace text in between html tags, and inside alt="" property.
 var escape_special_characters = function (value) {
-	value = ">" + value + "<"; //Add helpers to help RegExp to work correctly
+	value = "<dummy>" + value + "</dummy>"; //Add helpers to help RegExp to work correctly
 	$.each(chars, function (key, item) {
 		//Match only text in between html tags (and exclude CSS in between styles tags)
 		// value = value.replace(/(?:(?!<style)>([^<]+)<(?!\/style)|alt=(?:"|')(.*?)(?:"|'))/gm, function(match){
-		value = value.replace(/(?:<[^!xos>]*\/?>([^<]+)<|alt="([^"]+)")/gm, function(match){
+		// value = value.replace(/(?:<(?!:style|!|x|o)[^>]*>([^<]+)<|alt="([^"]+)")/gm, function(match){
+		value = value.replace(/>(.*?)<|alt['"]([^"'])['"]/gm, function(match){
 			//Replace special characters
-			var pattern = new RegExp("[" + RegExp.sanitize_regex(item.char) + "]", 'gm');
-			return match.replace(pattern, item.htmlentity);
+      // var pattern = new RegExp("[" + RegExp.sanitize_regex(item.char) + "]", 'gm');
+			return match.replace(item.char, item.htmlentity);
 		});
 	});
-	value = value.slice(1,-1); //Remove helpers
+	value = value.slice(7,-8); //Remove helpers
 	return value;
 };
 
