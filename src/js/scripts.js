@@ -332,8 +332,11 @@ var chars = [
 RegExp.sanitize_regex = function (s) {
 	return s.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
 };
-//Replace function
-// Replace text in between html tags, and inside alt="" property.
+/** Replace function
+  * Replace text in between html tags, and inside alt="" property.
+  *
+  * Demo: https://regex101.com/r/o55ZLB/1
+*/
 var escape_special_characters = function (value) {
 	value = "<dummy>" + value + "</dummy>"; //Add helpers to help RegExp to work correctly
 	$.each(chars, function (key, item) {
