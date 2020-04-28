@@ -2,319 +2,329 @@
 //Search and replace chars matrix.
 var chars = [
   {
-    char_name: 'NO-BREAK SPACE',
+    "char_name": 'NO-BREAK SPACE',
     'char': ' ',
-    htmlentity: '&nbsp;'
+    "htmlentity": '&nbsp;'
   },
   {
-    char_name: 'INVERTED EXCLAMATION MARK',
+    "char_name": 'INVERTED EXCLAMATION MARK',
     'char': '¡',
-    htmlentity: '&iexcl;'
+    "htmlentity": '&iexcl;'
   },
   {
-    char_name: 'FEMININE ORDINAL INDICATOR',
+    "char_name": 'FEMININE ORDINAL INDICATOR',
     'char': 'ª',
-    htmlentity: '&ordf;'
+    "htmlentity": '&ordf;'
   },
   {
-    char_name: 'LEFT-POINTING DOUBLE ANGLE QUOTATION MARK',
+    "char_name": 'LEFT-POINTING DOUBLE ANGLE QUOTATION MARK',
     'char': '«',
-    htmlentity: '&laquo;'
+    "htmlentity": '&laquo;'
   },
   {
-    char_name: 'ACUTE ACCENT',
+    "char_name": 'ACUTE ACCENT',
     'char': '´',
-    htmlentity: '&acute;'
+    "htmlentity": '&acute;'
   },
   {
-    char_name: 'MASCULINE ORDINAL INDICATOR',
+    "char_name": 'MASCULINE ORDINAL INDICATOR',
     'char': 'º',
-    htmlentity: '&ordm;'
+    "htmlentity": '&ordm;'
   },
   {
-    char_name: 'RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK',
+    "char_name": 'RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK',
     'char': '»',
-    htmlentity: '&raquo;'
+    "htmlentity": '&raquo;'
   },
   {
-    char_name: 'INVERTED QUESTION MARK',
+    "char_name": 'INVERTED QUESTION MARK',
     'char': '¿',
-    htmlentity: '&iquest;'
+    "htmlentity": '&iquest;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER A WITH GRAVE',
+    "char_name": 'LATIN CAPITAL LETTER A WITH GRAVE',
     'char': 'À',
-    htmlentity: '&Agrave;'
+    "htmlentity": '&Agrave;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER A WITH ACUTE',
+    "char_name": 'LATIN CAPITAL LETTER A WITH ACUTE',
     'char': 'Á',
-    htmlentity: '&Aacute;'
+    "htmlentity": '&Aacute;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER A WITH CIRCUMFLEX',
+    "char_name": 'LATIN CAPITAL LETTER A WITH CIRCUMFLEX',
     'char': 'Â',
-    htmlentity: '&Acirc;'
+    "htmlentity": '&Acirc;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER A WITH TILDE',
+    "char_name": 'LATIN CAPITAL LETTER A WITH TILDE',
     'char': 'Ã',
-    htmlentity: '&Atilde;'
+    "htmlentity": '&Atilde;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER A WITH DIAERESIS',
+    "char_name": 'LATIN CAPITAL LETTER A WITH DIAERESIS',
     'char': 'Ä',
-    htmlentity: '&Auml;'
+    "htmlentity": '&Auml;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER AE',
+    "char_name": 'LATIN CAPITAL LETTER AE',
     'char': 'Æ',
-    htmlentity: '&AElig;'
+    "htmlentity": '&AElig;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER C WITH CEDILLA',
+    "char_name": 'LATIN CAPITAL LETTER C WITH CEDILLA',
     'char': 'Ç',
-    htmlentity: '&Ccedil;'
+    "htmlentity": '&Ccedil;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER E WITH ACUTE',
+    "char_name": 'LATIN CAPITAL LETTER E WITH ACUTE',
     'char': 'É',
-    htmlentity: '&Eacute;'
+    "htmlentity": '&Eacute;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER E WITH CIRCUMFLEX',
+    "char_name": 'LATIN CAPITAL LETTER E WITH CIRCUMFLEX',
     'char': 'Ê',
-    htmlentity: '&Ecirc;'
+    "htmlentity": '&Ecirc;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER E WITH DIAERESIS',
+    "char_name": 'LATIN CAPITAL LETTER E WITH DIAERESIS',
     'char': 'Ë',
-    htmlentity: '&Euml;'
+    "htmlentity": '&Euml;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER I WITH ACUTE',
+    "char_name": 'LATIN CAPITAL LETTER I WITH ACUTE',
     'char': 'Í',
-    htmlentity: '&Iacute;'
+    "htmlentity": '&Iacute;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER I WITH DIAERESIS',
+    "char_name": 'LATIN CAPITAL LETTER I WITH DIAERESIS',
     'char': 'Ï',
-    htmlentity: '&Iuml;'
+    "htmlentity": '&Iuml;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER N WITH TILDE',
+    "char_name": 'LATIN CAPITAL LETTER N WITH TILDE',
     'char': 'Ñ',
-    htmlentity: '&Ntilde;'
+    "htmlentity": '&Ntilde;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER O WITH ACUTE',
+    "char_name": 'LATIN CAPITAL LETTER O WITH ACUTE',
     'char': 'Ó',
-    htmlentity: '&Oacute;'
+    "htmlentity": '&Oacute;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER O WITH CIRCUMFLEX',
+    "char_name": 'LATIN CAPITAL LETTER O WITH CIRCUMFLEX',
     'char': 'Ô',
-    htmlentity: '&Ocirc;'
+    "htmlentity": '&Ocirc;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER O WITH TILDE',
+    "char_name": 'LATIN CAPITAL LETTER O WITH TILDE',
     'char': 'Õ',
-    htmlentity: '&Otilde;'
+    "htmlentity": '&Otilde;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER O WITH DIAERESIS',
+    "char_name": 'LATIN CAPITAL LETTER O WITH DIAERESIS',
     'char': 'Ö',
-    htmlentity: '&Ouml;'
+    "htmlentity": '&Ouml;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER U WITH ACUTE',
+    "char_name": 'LATIN CAPITAL LETTER U WITH ACUTE',
     'char': 'Ú',
-    htmlentity: '&Uacute;'
+    "htmlentity": '&Uacute;'
   },
   {
-    char_name: 'LATIN CAPITAL LETTER U WITH DIAERESIS',
+    "char_name": 'LATIN CAPITAL LETTER U WITH DIAERESIS',
     'char': 'Ü',
-    htmlentity: '&Uuml;'
+    "htmlentity": '&Uuml;'
   },
   {
-    char_name: 'LATIN SMALL LETTER A WITH GRAVE',
+    "char_name": 'LATIN SMALL LETTER A WITH GRAVE',
     'char': 'à',
-    htmlentity: '&agrave;'
+    "htmlentity": '&agrave;'
   },
   {
-    char_name: 'LATIN SMALL LETTER A WITH ACUTE',
+    "char_name": 'LATIN SMALL LETTER A WITH ACUTE',
     'char': 'á',
-    htmlentity: '&aacute;'
+    "htmlentity": '&aacute;'
   },
   {
-    char_name: 'LATIN SMALL LETTER A WITH CIRCUMFLEX',
+    "char_name": 'LATIN SMALL LETTER A WITH CIRCUMFLEX',
     'char': 'â',
-    htmlentity: '&acirc;'
+    "htmlentity": '&acirc;'
   },
   {
-    char_name: 'LATIN SMALL LETTER A WITH TILDE',
+    "char_name": 'LATIN SMALL LETTER A WITH TILDE',
     'char': 'ã',
-    htmlentity: '&atilde;'
+    "htmlentity": '&atilde;'
   },
   {
-    char_name: 'LATIN SMALL LETTER A WITH DIAERESIS',
+    "char_name": 'LATIN SMALL LETTER A WITH DIAERESIS',
     'char': 'ä',
-    htmlentity: '&auml;'
+    "htmlentity": '&auml;'
   },
   {
-    char_name: 'LATIN SMALL LETTER AE',
+    "char_name": 'LATIN SMALL LETTER AE',
     'char': 'æ',
-    htmlentity: '&aelig;'
+    "htmlentity": '&aelig;'
   },
   {
-    char_name: 'LATIN SMALL LETTER C WITH CEDILLA',
+    "char_name": 'LATIN SMALL LETTER C WITH CEDILLA',
     'char': 'ç',
-    htmlentity: '&ccedil;'
+    "htmlentity": '&ccedil;'
   },
   {
-    char_name: 'LATIN SMALL LETTER E WITH ACUTE',
+    "char_name": 'LATIN SMALL LETTER E WITH ACUTE',
     'char': 'é',
-    htmlentity: '&eacute;'
+    "htmlentity": '&eacute;'
   },
   {
-    char_name: 'LATIN SMALL LETTER E WITH CIRCUMFLEX',
+    "char_name": 'LATIN SMALL LETTER E WITH CIRCUMFLEX',
     'char': 'ê',
-    htmlentity: '&ecirc;'
+    "htmlentity": '&ecirc;'
   },
   {
-    char_name: 'LATIN SMALL LETTER E WITH DIAERESIS',
+    "char_name": 'LATIN SMALL LETTER E WITH DIAERESIS',
     'char': 'ë',
-    htmlentity: '&euml;'
+    "htmlentity": '&euml;'
   },
   {
-    char_name: 'LATIN SMALL LETTER I WITH ACUTE',
+    "char_name": 'LATIN SMALL LETTER I WITH ACUTE',
     'char': 'í',
-    htmlentity: '&iacute;'
+    "htmlentity": '&iacute;'
   },
   {
-    char_name: 'LATIN SMALL LETTER I WITH DIAERESIS',
+    "char_name": 'LATIN SMALL LETTER I WITH DIAERESIS',
     'char': 'ï',
-    htmlentity: '&iuml;'
+    "htmlentity": '&iuml;'
   },
   {
-    char_name: 'LATIN SMALL LETTER N WITH TILDE',
+    "char_name": 'LATIN SMALL LETTER N WITH TILDE',
     'char': 'ñ',
-    htmlentity: '&ntilde;'
+    "htmlentity": '&ntilde;'
   },
   {
-    char_name: 'LATIN SMALL LETTER O WITH ACUTE',
+    "char_name": 'LATIN SMALL LETTER O WITH ACUTE',
     'char': 'ó',
-    htmlentity: '&oacute;'
+    "htmlentity": '&oacute;'
   },
   {
-    char_name: 'LATIN SMALL LETTER O WITH CIRCUMFLEX',
+    "char_name": 'LATIN SMALL LETTER O WITH CIRCUMFLEX',
     'char': 'ô',
-    htmlentity: '&ocirc;'
+    "htmlentity": '&ocirc;'
   },
   {
-    char_name: 'LATIN SMALL LETTER O WITH TILDE',
+    "char_name": 'LATIN SMALL LETTER O WITH TILDE',
     'char': 'õ',
-    htmlentity: '&otilde;'
+    "htmlentity": '&otilde;'
   },
   {
-    char_name: 'LATIN SMALL LETTER O WITH DIAERESIS',
+    "char_name": 'LATIN SMALL LETTER O WITH DIAERESIS',
     'char': 'ö',
-    htmlentity: '&ouml;'
+    "htmlentity": '&ouml;'
   },
   {
-    char_name: 'LATIN SMALL LETTER U WITH ACUTE',
+    "char_name": 'LATIN SMALL LETTER U WITH ACUTE',
     'char': 'ú',
-    htmlentity: '&uacute;'
+    "htmlentity": '&uacute;'
   },
   {
-    char_name: 'LATIN SMALL LETTER U WITH DIAERESIS',
+    "char_name": 'LATIN SMALL LETTER U WITH DIAERESIS',
     'char': 'ü',
-    htmlentity: '&uuml;'
+    "htmlentity": '&uuml;'
   },
   {
-    char_name: 'HYPHEN-MINUS to NON-BREAKING HYPHEN',
+    "char_name": 'HYPHEN-MINUS to NON-BREAKING HYPHEN',
     'char': '-',
-    htmlentity: '&#8209;'
+    "htmlentity": '&#8209;'
   },
   {
-    char_name: 'NON-BREAKING HYPHEN',
+    "char_name": 'NON-BREAKING HYPHEN',
     'char': '‑',
-    htmlentity: '&#8209;'
+    "htmlentity": '&#8209;'
   },
   {
-    char_name: 'EN DASH',
+    "char_name": 'EN DASH',
     'char': '–',
-    htmlentity: '&ndash;'
+    "htmlentity": '&ndash;'
   },
   {
-    char_name: 'EM DASH',
+    "char_name": 'EM DASH',
     'char': '—',
-    htmlentity: '&mdash;'
+    "htmlentity": '&mdash;'
   },
   {
-    char_name: 'LEFT SINGLE QUOTATION MARK',
+    "char_name": 'LEFT SINGLE QUOTATION MARK',
     'char': '‘',
-    htmlentity: '&lsquo;'
+    "htmlentity": '&lsquo;'
   },
   {
-    char_name: 'RIGHT SINGLE QUOTATION MARK',
+    "char_name": 'RIGHT SINGLE QUOTATION MARK',
     'char': '’',
-    htmlentity: '&rsquo;'
+    "htmlentity": '&rsquo;'
   },
   {
-    char_name: 'LEFT DOUBLE QUOTATION MARK',
+    "char_name": 'LEFT DOUBLE QUOTATION MARK',
     'char': '“',
-    htmlentity: '&ldquo;'
+    "htmlentity": '&ldquo;'
   },
   {
-    char_name: 'RIGHT DOUBLE QUOTATION MARK',
+    "char_name": 'RIGHT DOUBLE QUOTATION MARK',
     'char': '”',
-    htmlentity: '&rdquo;'
+    "htmlentity": '&rdquo;'
   },
   {
-    char_name: 'SINGLE LEFT-POINTING ANGLE QUOTATION MARK',
+    "char_name": 'SINGLE LEFT-POINTING ANGLE QUOTATION MARK',
     'char': '‹',
-    htmlentity: '&lsaquo;'
+    "htmlentity": '&lsaquo;'
   },
   {
-    char_name: 'SINGLE RIGHT-POINTING ANGLE QUOTATION MARK',
+    "char_name": 'SINGLE RIGHT-POINTING ANGLE QUOTATION MARK',
     'char': '›',
-    htmlentity: '&rsaquo;'
+    "htmlentity": '&rsaquo;'
   },
   {
-    char_name: 'EURO SIGN',
+    "char_name": 'EURO SIGN',
     'char': '€',
-    htmlentity: '&euro;'
+    "htmlentity": '&euro;'
   },
   {
-    char_name: 'CHECK MARK',
+    "char_name": 'CHECK MARK',
     'char': '✓',
-    htmlentity: '&#10003;'
+    "htmlentity": '&#10003;'
   },
   {
-    char_name: 'HEAVY CHECK MARK',
+    "char_name": 'HEAVY CHECK MARK',
     'char': '✔',
-    htmlentity: '&#10004;'
+    "htmlentity": '&#10004;'
   },
   {
-    char_name: 'REGISTRY MARK',
+    "char_name": 'REGISTRY MARK',
     'char': '®',
-    htmlentity: '&reg;'
+    "htmlentity": '&reg;'
   },
   {
-    char_name: 'COPYRIGHT SIGN',
+    "char_name": 'COPYRIGHT SIGN',
     'char': '©',
-    htmlentity: '&copy;'
+    "htmlentity": '&copy;'
   },
   {
-    char_name: 'SERVICE MARK',
+    "char_name": 'SERVICE MARK',
     'char': '℠',
-    htmlentity: '<sup>SM</sup>'
+    "htmlentity": '<sup>SM</sup>'
   },
   {
-    char_name: 'TRADE MARK SIGN',
+    "char_name": 'TRADE MARK SIGN',
     'char': '™',
-    htmlentity: '<sup>TM</sup>'
+    "htmlentity": '<sup>TM</sup>'
+  },
+  {
+    "char_name": 'Extra Space before comma',
+    'char': ' ,',
+    "htmlentity": ','
+  },
+  {
+    "char_name": 'Extra Space before period',
+    'char': ' .',
+    "htmlentity": '.'
   }
 ];
 
