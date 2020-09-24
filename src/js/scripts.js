@@ -345,8 +345,8 @@ var escape_special_characters = function (value) {
 		// value = value.replace(/(?:<(?!:style|!|x|o)[^>]*>([^<]+)<|alt="([^"]+)")/gm, function(match){
 		value = value.replace(/>(.*?)<|alt['"]([^"'])['"]/gm, function(match){
 			//Replace special characters
-      // var pattern = new RegExp("[" + RegExp.sanitize_regex(item.char) + "]", 'gm');
-			return match.replace(item.char, item.htmlentity);
+      var pattern = new RegExp(RegExp.sanitize_regex(item.char), 'gm');
+			return match.replace(pattern, item.htmlentity);
 		});
 	});
 	value = value.slice(7,-8); //Remove helpers
